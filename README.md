@@ -9,3 +9,7 @@ sudo docker image tag spring-boot-docker mahadi791/spring-boot-docker-200204-1
 
 #push image to docker hub
 sudo docker push mahadi791/spring-boot-docker-200204-1
+
+#directly run container from docker hub
+sudo docker run --name spring-boot-docker -d -p 8079:8079 mahadi791/spring-boot-docker-200204-1
+
