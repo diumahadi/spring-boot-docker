@@ -24,4 +24,9 @@ public class HomeController {
     public ResponseEntity helloV3() {
         return ResponseEntity.ok("Salam 3");
     }
+
+    @GetMapping("/v4/hello")
+    public ResponseEntity helloV4() {
+        return ResponseEntity.ok("Salam 4");
+    }
 }
