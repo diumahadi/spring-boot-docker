@@ -10,8 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/rest")
 public class HomeController {
 
-    @GetMapping("/hello")
+    @GetMapping("/v1/hello")
     public ResponseEntity hello() {
         return ResponseEntity.ok("Salam");
+    }
+
+    @GetMapping("/v2/hello")
+    public ResponseEntity helloV2() {
+        return ResponseEntity.ok("Salam 2");
     }
 }
